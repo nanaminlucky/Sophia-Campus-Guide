@@ -870,4 +870,4 @@ with gr.Blocks() as demo:
     )
 
 # アプリを起動
-demo.launch()
+demo.launch(share=True)

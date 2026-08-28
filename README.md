@@ -1,4 +1,4 @@
-# Sophia Campus Guide
+# Sophia Campus Guide　🦅
 
 上智大学のキャンパス案内、および周辺の飲食店を紹介するアプリケーションです。
 大学のPython入門授業の課題の一環として作成しました。
@@ -19,28 +19,22 @@
 
 ---
 
-## ローカル環境での動かし方
+## 動かし方
 
-### 1. リポジトリのクローン
-```bash
-git clone git@github.com:nanaminlucky/Sophia-Campus-Guide.git
-cd Sophia-Campus-Guide
-```
+### 1. ローカル環境（自分のPC）で動かす場合
+1. リポジトリをクローンし、仮想環境を有効化してライブラリをインストールします。
+   ```bash
+   git clone git@github.com:nanaminlucky/Sophia-Campus-Guide.git
+   cd Sophia-Campus-Guide
+   python -m venv .venv
+   source .venv/bin/activate
+   pip install -r requirements.txt
+   ```
+2. アプリケーションを起動します。
+   ```bash
+   python "Sophia Campus Guide.py"
+   ```
+3. ブラウザで `http://127.0.0.1:7860` にアクセスすると動作します。
 
-### 2. 仮想環境の作成と有効化
-```bash
-python -m venv .venv
-source .venv/bin/activate
-```
-
-### 3. ライブラリのインストール
-```bash
-pip install -r requirements.txt
-```
-
-### 4. アプリケーションの起動
-```bash
-python "Sophia Campus Guide.py"
-```
-起動後、ブラウザで `http://127.0.0.1:7860` などの指定されたアドレスにアクセスすると動作します。
-
+### 2. 他の人にURLで共有する場合
+コード内で `launch(share=True)` を設定して起動すると、ターミナルに **`https://gradio.live`** という公開URLが一時的（72時間）に自動発行されます。そのURLを伝えることで、他の人のブラウザからも直接アプリを動かすことができます。
