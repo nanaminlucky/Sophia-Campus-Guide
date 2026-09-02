@@ -2,7 +2,7 @@
 
 # Pythonアプリケーション開発
 # 「Sophia Campus Guide ～四ツ谷を歩こう！〜」
-
+import os 
 import gradio as gr
 
 # ==========================================================
@@ -870,4 +870,9 @@ with gr.Blocks() as demo:
     )
 
 # アプリを起動
-demo.launch(share=True)
+if __name__ == "__main__":
+    # Renderが割り当てるポート番号を取得。なければデフォルトで7860を使用
+    port = int(os.environ.get("PORT", 7860))
+    
+    # server_name="0.0.0.0" で外部からのアクセスを許可
+    demo.launch(server_name="0.0.0.0", server_port=port)
