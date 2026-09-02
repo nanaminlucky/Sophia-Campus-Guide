@@ -7,7 +7,8 @@
 
 ## 🚀 デモ（いつでも公開中！）
 どなたでもブラウザから直接アプリケーションを体験いただけます。
-👉 **[Sophia Campus Guide を体験する](https://onrender.com)**
+👉 **[Sophia Campus Guide を体験する]([https://sophia-campus-guide.onrender.com
+])**
 
 ※無料サーバー（Render）を使用しているため、しばらくアクセスがないと最初のページ読み込みに「50秒〜1分」ほど時間がかかる場合がありますが、一度起動すればスムーズに動きます。
 
